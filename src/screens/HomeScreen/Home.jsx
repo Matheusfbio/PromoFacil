@@ -1,14 +1,40 @@
 import React from "react";
-import techPromo from "./img/tech-promo.png";
+import promoFacil from "./img/promoFacil.png";
 export default function Home() {
   return (
-    <div className="flex bg-red-600">
-      <main className="p-4 space-x-2 flex">
-        <img src={techPromo} alt="logo" />
-        <h2 className="text-xl font-bold">Tech promos</h2>
-        <h2 className="text-xl font-bold">Notebooks</h2>
+    <div className="flex space-x-3 justify-between">
+      <main className="flex space-x-2 justify-center items-center ">
+        <img src={promoFacil} alt="logo" />
+        <div className="flex flex-row ">
+          <p className="text-lg text-center font-bold">Promo</p>
+          <p className="text-lg text-center font-bold">Facil</p>
+        </div>
+        {/* <FontAwesomeIcon icon={faLaptop} />
+        <h2>Notebooks</h2>
+        <FontAwesomeIcon icon={faLaptop} />
+        <h2>Periféricos</h2>
+        <FontAwesomeIcon icon={faLaptop} />
+        <h2>Desktop</h2>
+        <FontAwesomeIcon icon={faLaptop} />
+        <p>Mais</p> */}
       </main>
-      <input className="p-5" type="search" placeholder="Pesquisar" />
+      <div className="flex justify-items-center">
+        <div className="relative">
+          <input
+            type="text"
+            className="border border-gray-300 rounded-lg pl-10 pr-4 py-2"
+            placeholder="Digite algo"
+          />
+        </div>
+        <div className="relative ">
+          <button
+            className="border border-gray-300 hover:bg-green-400 rounded-lg pl-5 pr-4 py-2 item text-center"
+            type="button"
+          >
+            Entrar
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
