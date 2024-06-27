@@ -1,5 +1,5 @@
 import React from "react";
-import promoFacil from "./img/promoFacil.png";
+import promoFacil from "./img/promofacil.png";
 export default function Home() {
   return (
     <div className="flex space-x-3 justify-between">
